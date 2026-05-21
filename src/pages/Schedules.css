@@ -1,0 +1,34 @@
+.schedules-section { background: var(--off-white); }
+
+.schedules-filters {
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.filter-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.schedules-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.no-results {
+  padding: 48px;
+  text-align: center;
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  background: var(--white);
+}
+
+@media (max-width: 768px) {
+  .filter-row { flex-direction: column; }
+  .filter-row > * { width: 100% !important; }
+}
