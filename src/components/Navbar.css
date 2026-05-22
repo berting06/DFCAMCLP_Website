@@ -150,10 +150,48 @@
   padding: 16px 24px 0;
 }
 
+@media (max-width: 1100px) {
+  .navbar-main-inner { gap: 16px; }
+  .navbar-link { padding: 8px 10px; font-size: 0.85rem; }
+}
+
 @media (max-width: 900px) {
   .navbar-links, .navbar-cta { display: none; }
   .navbar-hamburger { display: flex; }
+  .navbar-main-inner { height: auto; padding: 12px 0; }
 }
+
+@media (max-width: 600px) {
+  .navbar-brand-text { display: none; }
+  .navbar-logo { width: 36px; height: 36px; }
+  .navbar-main-inner { gap: 8px; }
+}
+
 @media (min-width: 901px) {
   .navbar-mobile { display: none !important; }
+}
+
+/* Mobile menu styling improvements */
+@media (max-width: 900px) {
+  .navbar-mobile.open {
+    max-height: 500px;
+    padding: 16px 0 24px;
+  }
+  
+  .navbar-mobile-link {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .navbar-mobile-cta {
+    padding: 16px 20px 0;
+    gap: 12px;
+  }
+  
+  .navbar-mobile-cta .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 11px 16px;
+    font-size: 0.9rem;
+  }
 }

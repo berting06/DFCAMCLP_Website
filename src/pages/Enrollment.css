@@ -182,10 +182,75 @@
   margin-bottom: 28px !important;
 }
 
+@media (max-width: 1024px) {
+  .enrollment-container { gap: 24px; }
+  .enrollment-sidebar { top: 100px; }
+}
+
 @media (max-width: 900px) {
   .enrollment-container { grid-template-columns: 1fr; }
-  .enrollment-sidebar { position: static; }
+  .enrollment-sidebar { position: static; margin-bottom: 24px; }
+  
+  .enrollment-steps { margin-bottom: 0; }
+  
+  .form-row, .form-row-3 { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+  .enrollment-sidebar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .enrollment-steps {
+    margin-bottom: 0;
+    min-width: unset;
+  }
+  
   .form-row, .form-row-3 { grid-template-columns: 1fr; }
+  
+  .enrollment-card-header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 24px;
+  }
+  
+  .enrollment-card-header h2 { font-size: 1.1rem; }
+  
+  .enrollment-form { padding: 20px; }
+  
+  .enrollment-actions {
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 10px;
+  }
+  
+  .enrollment-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .enrollment-sidebar {
+    grid-template-columns: 1fr;
+  }
+  
+  .enroll-step {
+    padding: 14px 16px;
+    font-size: 0.8rem;
+  }
+  
+  .enrollment-success {
+    padding: 32px 20px;
+    margin: 20px;
+  }
+  
+  .enrollment-success h2 { font-size: 1.4rem; }
+  .enrollment-success p { font-size: 0.85rem; }
+  
+  .privacy-agreements { padding: 16px; margin-top: 12px; }
+  .privacy-agreements h4 { font-size: 0.8rem; margin-bottom: 12px; }
+  .checkbox-label span { font-size: 0.8rem; }
 }

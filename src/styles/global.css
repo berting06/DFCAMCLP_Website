@@ -68,8 +68,28 @@ button { cursor: pointer; font-family: var(--font-body); }
   padding: 0 24px;
 }
 
+@media (max-width: 1024px) {
+  .container { padding: 0 20px; }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 12px; }
+}
+
 .section {
   padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 56px 0; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 40px 0; }
 }
 
 .section-title {
@@ -287,8 +307,63 @@ tbody tr:last-child td { border-bottom: none; }
 .animate-fade-in-up { animation: fadeInUp 0.55s ease both; }
 .animate-fade-in    { animation: fadeIn 0.4s ease both; }
 
-/* Responsive */
+/* Page hero responsive */
 @media (max-width: 768px) {
-  .section { padding: 56px 0; }
-  .container { padding: 0 16px; }
+  .page-hero {
+    padding: 48px 0 40px;
+  }
+  .page-hero h1 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+  }
+  .page-hero p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 40px 0 32px;
+  }
+  .page-hero h1 {
+    font-size: 1.5rem;
+  }
+  .breadcrumb {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+
+/* Form responsive */
+@media (max-width: 768px) {
+  .form-label {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Table responsive */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  th, td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Button responsive */
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .btn-primary, .btn-accent, .btn-outline, .btn-outline-white {
+    width: 100%;
+    justify-content: center;
+  }
 }

@@ -122,3 +122,86 @@
   padding: 8px 12px;
   display: inline-block;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-page { padding: 32px 16px; }
+  
+  .login-card {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .login-header {
+    padding: 28px 24px 22px;
+  }
+  
+  .login-logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 12px;
+  }
+  
+  .login-header h1 {
+    font-size: 1.3rem;
+  }
+  
+  .login-form { padding: 24px; }
+  .login-footer { padding: 16px 24px 20px; }
+}
+
+@media (max-width: 600px) {
+  .login-page { padding: 24px 12px; }
+  
+  .login-header {
+    padding: 24px 20px 18px;
+  }
+  
+  .login-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .login-header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+  
+  .login-header p { font-size: 0.8rem; }
+  
+  .role-tab {
+    padding: 10px 6px;
+    font-size: 0.75rem;
+  }
+  
+  .login-form {
+    padding: 20px;
+  }
+  
+  .login-btn {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .login-footer {
+    padding: 14px 20px 18px;
+  }
+  
+  .login-footer p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-dpa {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page { min-height: auto; }
+  
+  .form-label { font-size: 0.75rem; }
+  .form-control { padding: 9px 10px; font-size: 0.9rem; }
+}

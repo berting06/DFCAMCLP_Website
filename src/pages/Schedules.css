@@ -28,7 +28,105 @@
   background: var(--white);
 }
 
+.no-results {
+  padding: 48px;
+  text-align: center;
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  background: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .schedules-filters {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .filter-row { gap: 12px; }
+}
+
 @media (max-width: 768px) {
-  .filter-row { flex-direction: column; }
-  .filter-row > * { width: 100% !important; }
+  .schedules-section { padding: 56px 0; }
+  
+  .schedules-filters {
+    padding: 16px;
+    margin-bottom: 12px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .filter-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .filter-row > * { 
+    width: 100% !important;
+    min-width: unset;
+  }
+  
+  .schedules-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .table-wrapper {
+    border-radius: var(--radius-md);
+  }
+  
+  table {
+    font-size: 0.85rem;
+  }
+  
+  th, td {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .schedules-section { padding: 40px 0; }
+  
+  .schedules-filters {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .filter-row > * {
+    font-size: 0.9rem;
+  }
+  
+  .no-results {
+    padding: 32px 16px;
+    font-size: 0.9rem;
+  }
+  
+  table {
+    font-size: 0.75rem;
+  }
+  
+  th, td {
+    padding: 8px 10px;
+  }
+  
+  th { font-size: 0.7rem; }
+}
+
+@media (max-width: 480px) {
+  .schedules-filters {
+    padding: 12px;
+  }
+  
+  .table-wrapper {
+    border-radius: var(--radius-sm);
+  }
+  
+  th, td {
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
 }
