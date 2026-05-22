@@ -27,10 +27,19 @@
   font-weight: 500;
   color: var(--gray-400);
   transition: all var(--transition);
+  min-height: 44px;
+  touch-action: manipulation;
+}
+.enroll-step:focus-within {
+  background: rgba(0,48,135,.02);
 }
 .enroll-step:last-child { border-bottom: none; }
 .enroll-step.done { color: var(--success); }
-.enroll-step.active { color: var(--primary); background: rgba(0,48,135,.04); font-weight: 700; }
+.enroll-step.active { 
+  color: var(--primary); 
+  background: rgba(0,48,135,.04); 
+  font-weight: 700; 
+}
 .enroll-step-num {
   width: 28px;
   height: 28px;
@@ -102,6 +111,12 @@
   background: var(--gray-50);
 }
 
+.enrollment-actions .btn {
+  flex: 1;
+  justify-content: center;
+  min-width: auto;
+}
+
 /* Privacy agreements */
 .privacy-agreements {
   background: var(--gray-50);
@@ -122,9 +137,25 @@
   gap: 12px;
   margin-bottom: 16px;
   cursor: pointer;
+  touch-action: manipulation;
+  min-height: 44px;
+  padding: 4px 0;
 }
-.checkbox-label input[type=checkbox] { margin-top: 3px; flex-shrink: 0; width: 16px; height: 16px; accent-color: var(--primary); }
-.checkbox-label span { font-size: 0.875rem; color: var(--gray-600); line-height: 1.6; }
+.checkbox-label input[type=checkbox] { 
+  margin-top: 6px; 
+  flex-shrink: 0; 
+  width: 18px; 
+  height: 18px; 
+  accent-color: var(--primary);
+  cursor: pointer;
+  min-width: 44px;
+}
+.checkbox-label span { 
+  font-size: 0.875rem; 
+  color: var(--gray-600); 
+  line-height: 1.6;
+  flex: 1;
+}
 
 /* Review */
 .review-section { display: flex; flex-direction: column; gap: 24px; }

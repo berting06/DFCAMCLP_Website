@@ -54,7 +54,7 @@
 }
 .role-tab {
   flex: 1;
-  padding: 12px 8px;
+  padding: 14px 8px;
   background: none;
   border: none;
   border-bottom: 3px solid transparent;
@@ -63,14 +63,29 @@
   color: var(--gray-400);
   transition: all var(--transition);
   cursor: pointer;
+  min-height: 44px;
+  touch-action: manipulation;
 }
-.role-tab:hover { color: var(--primary); background: var(--white); }
-.role-tab.active { color: var(--primary); background: var(--white); border-bottom-color: var(--primary); }
+.role-tab:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+.role-tab:active, .role-tab:hover { 
+  color: var(--primary); 
+  background: var(--white); 
+}
+.role-tab.active { 
+  color: var(--primary); 
+  background: var(--white); 
+  border-bottom-color: var(--primary); 
+}
 
 /* Form */
 .login-form { padding: 28px 32px; }
 
-.password-wrap { position: relative; }
+.password-wrap { 
+  position: relative; 
+}
 .password-toggle {
   position: absolute;
   right: 12px;
@@ -80,19 +95,32 @@
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  padding: 4px;
+  padding: 8px;
   opacity: 0.6;
   transition: opacity var(--transition);
+  min-width: 44px;
+  min-height: 44px;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.password-toggle:hover { opacity: 1; }
+.password-toggle:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+.password-toggle:active, .password-toggle:hover { 
+  opacity: 1; 
+}
 
 .login-btn {
   width: 100%;
   justify-content: center;
-  padding: 13px;
+  padding: 14px;
   font-size: 1rem;
   margin-top: 8px;
   gap: 10px;
+  min-height: 48px;
 }
 
 .spinner {
