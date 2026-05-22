@@ -9,7 +9,7 @@ const HERO_SLIDES = [
     caption: "New DFCAMCLP Building — Inaugurated 2024",
   },
   {
-    url: "https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/542705434_1378950140904647_5656420931852481680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHZSKpHj0nDJJr7-g2s5hbeCYrq3li-9AsJiureWL70C28gg5PspCjWaCVdrD5pv0Da71rmdt8DGy3ykJns98X-&_nc_ohc=eBGn1SmxphgQ7kNvwHrx39n&_nc_oc=AdrijFCrnYC0Gwd_52kKqNMtrmPhDNWk8-38mTuElEjku04YUhl1oURaLIWjsM5RWtQ&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=kCHc6zKdUfrLxBhlyUHXow&_nc_ss=7b2a8&oh=00_Af71Fwh33GeZ6wARKXxgbqq6vURJBl8V0nOk8kMukydkkQ&oe=6A15DF3B",
+    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=469Mbh3TQeEQ7kNvwHsv4ds&_nc_oc=AdrCXGdba_2Zh5SjM-_MudIg22LA1W8vUipedfkfLClBE2NEelGhzrZxwELJbZ7Lts8&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=72Zqy4PhPdLrVSInFf_rXA&_nc_ss=7b2a8&oh=00_Af5C6dzwqKf2tV5y9N2JmYhZgCNOMxbdi5K-dxmjxu25DA&oe=6A15FBD0",
     caption: "DFCAMCLP Students",
   },
   {
