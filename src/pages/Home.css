@@ -1,7 +1,7 @@
 /* HERO */
 .hero {
   position: relative;
-  min-height: 560px;
+  min-height: clamp(320px, 55vh, 560px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -28,8 +28,9 @@
 .hero-content {
   position: relative;
   color: var(--white);
-  max-width: 660px;
-  padding: 80px 0;
+  max-width: 760px;
+  width: min(100%, 760px);
+  padding: clamp(36px, 6vw, 80px) 0;
 }
 .hero-badge { margin-bottom: 20px; display: inline-block; }
 .hero-content h1 {
@@ -74,8 +75,46 @@
   margin-top: 16px;
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   line-height: 1.7;
-  max-width: 680px;
+  max-width: 100%;
   color: rgba(255,255,255,0.85);
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: clamp(32px, 5vw, 60px) 0;
+  }
+}
+
+@media (max-width: 840px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .announcements-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-banner {
+    padding: 48px 0;
+  }
+  .cta-banner-inner {
+    gap: 22px;
+  }
+  .program-item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .program-code {
+    flex-shrink: 0;
+  }
+  .program-name {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
