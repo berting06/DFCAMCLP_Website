@@ -5,15 +5,15 @@ import "./Home.css";
 // Real DFCAMCLP-related images
 const HERO_SLIDES = [
   {
-    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/542227100_1378951367571191_3093714474353907952_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEkTVXCifUUKi9_V2OC9vNInty85NbbPoKe3Lzk1ts-gvNjGDpYC_vg6vnu4OOCHgxz87nC9IpvPBfgPqUhk2Ci&_nc_ohc=ATsaUktin0AQ7kNvwGpY8-N&_nc_oc=AdroephYapk1LJ2A3urlq84LREbD014tyTVQV0VTE2h1C7esCQi6y_vcIFwmFecNHNs&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=hxskoKQ07QkSCa4dT2GN7A&_nc_ss=7b2a8&oh=00_Af55kQZMfg5opf--0AKy91FmypBqy7sP9iuNngmzHuO9jg&oe=6A17CBF9",
+    url: "https://scontent.fmnl17-8.fna.fbcdn.net/v/t39.30808-6/541435400_1378949077571420_8534883278537769718_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFH9vSmRsglBghjwa5SHdHI8GhgxBQwTIHwaGDEFDBMgS8Oo5NmPfjm4xI0-tRKNRQIe0Z3di1yjukhbhOxRbdO&_nc_ohc=ce-ZqYfNlagQ7kNvwGEJR1A&_nc_oc=AdoCGpsZuVgGmyRt_8xtXfFKapyBux8rVkNSwFny9pzbUxXlKB1lKg71ZWPgWQ9RqmY&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_gid=KVHtybfVuNdPVucyJkviLw&_nc_ss=7b2a8&oh=00_Af4OkqocLjsphXmYirvy2YbDLurDkSdQTocaKDzre6vPLA&oe=6A1793BB",
     caption: "New DFCAMCLP Building — Inaugurated 2024",
   },
   {
-    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/542227100_1378951367571191_3093714474353907952_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEkTVXCifUUKi9_V2OC9vNInty85NbbPoKe3Lzk1ts-gvNjGDpYC_vg6vnu4OOCHgxz87nC9IpvPBfgPqUhk2Ci&_nc_ohc=ATsaUktin0AQ7kNvwGpY8-N&_nc_oc=AdroephYapk1LJ2A3urlq84LREbD014tyTVQV0VTE2h1C7esCQi6y_vcIFwmFecNHNs&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=hxskoKQ07QkSCa4dT2GN7A&_nc_ss=7b2a8&oh=00_Af55kQZMfg5opf--0AKy91FmypBqy7sP9iuNngmzHuO9jg&oe=6A17CBF9",
+    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/541428768_1378950234237971_1021762653052368538_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGH32sHbo5wnP-AurL60jNGQH8WfiWqAjVAfxZ-JaoCNcc-v74fdiHhHAuZ7b9SluzsrHO-T1xQlBvh1GgHD8ff&_nc_ohc=ntQfhFJ6M6EQ7kNvwFB31Cx&_nc_oc=AdqCKwyqqev0WTiCBC7LsAl5Uiot-QjWklBbfxyb3rJyPyrZ6fvSGd95Lb5C1RlXk7A&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=5Pht2f0c7snHrCL3kqI7Vw&_nc_ss=7b2a8&oh=00_Af4YQBDyIHU0PoGAxhmlbkCS7Av1Em7TAyqnA2SwrB0E4w&oe=6A179739",
     caption: "DFCAMCLP Students",
   },
   {
-    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/542227100_1378951367571191_3093714474353907952_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEkTVXCifUUKi9_V2OC9vNInty85NbbPoKe3Lzk1ts-gvNjGDpYC_vg6vnu4OOCHgxz87nC9IpvPBfgPqUhk2Ci&_nc_ohc=ATsaUktin0AQ7kNvwGpY8-N&_nc_oc=AdroephYapk1LJ2A3urlq84LREbD014tyTVQV0VTE2h1C7esCQi6y_vcIFwmFecNHNs&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=hxskoKQ07QkSCa4dT2GN7A&_nc_ss=7b2a8&oh=00_Af55kQZMfg5opf--0AKy91FmypBqy7sP9iuNngmzHuO9jg&oe=6A17CBF9",
+    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=469Mbh3TQeEQ7kNvwHsv4ds&_nc_oc=AdrCXGdba_2Zh5SjM-_MudIg22LA1W8vUipedfkfLClBE2NEelGhzrZxwELJbZ7Lts8&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=ZmQ1Y22KqKYSdqZ5Qcqx3g&_nc_ss=7b2a8&oh=00_Af77OKltkFd3A9HBV7mKglTG3rn66tbi0HAlljPE_w7Aog&oe=6A178590",
     caption: "Student Council — DFCAMCLP",
   },
 ];
