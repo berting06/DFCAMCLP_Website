@@ -5,15 +5,15 @@ import "./Home.css";
 // Real DFCAMCLP-related images
 const HERO_SLIDES = [
   {
-    url: "https://media.assettype.com/tribune%2F2024-06%2F8e95de55-139c-4e20-867b-abf8306c1075%2F449038089_876813631152274_3150620265504907949_n.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&mode=crop&enlarge=true",
+    url: "https://scontent.fmnl17-8.fna.fbcdn.net/v/t39.30808-6/541435400_1378949077571420_8534883278537769718_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFH9vSmRsglBghjwa5SHdHI8GhgxBQwTIHwaGDEFDBMgS8Oo5NmPfjm4xI0-tRKNRQIe0Z3di1yjukhbhOxRbdO&_nc_ohc=ce-ZqYfNlagQ7kNvwGEJR1A&_nc_oc=AdoCGpsZuVgGmyRt_8xtXfFKapyBux8rVkNSwFny9pzbUxXlKB1lKg71ZWPgWQ9RqmY&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_gid=KVHtybfVuNdPVucyJkviLw&_nc_ss=7b2a8&oh=00_Af4OkqocLjsphXmYirvy2YbDLurDkSdQTocaKDzre6vPLA&oe=6A1793BB",
     caption: "New DFCAMCLP Building — Inaugurated 2024",
   },
   {
-    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/541428768_1378950234237971_1021762653052368538_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGH32sHbo5wnP-AurL60jNGQH8WfiWqAjVAfxZ-JaoCNcc-v74fdiHhHAuZ7b9SluzsrHO-T1xQlBvh1GgHD8ff&_nc_ohc=ntQfhFJ6M6EQ7kNvwGLhj0h&_nc_oc=AdoByXoYAaekc_PAXxrXa1o6TRvbm5TzAOh8JXtmeXU1uHOMkpuV3oNy1F3djCJyuJI&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=fmIc1exeS5E4_6hZHQSyTg&_nc_ss=7b2a8&oh=00_Af4bl81dsJOaxjJctnkN0I9Wm_N6tTPsOQfFWsENuGQpnQ&oe=6A15D539",
+    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=469Mbh3TQeEQ7kNvwHsv4ds&_nc_oc=AdrCXGdba_2Zh5SjM-_MudIg22LA1W8vUipedfkfLClBE2NEelGhzrZxwELJbZ7Lts8&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=ZmQ1Y22KqKYSdqZ5Qcqx3g&_nc_ss=7b2a8&oh=00_Af77OKltkFd3A9HBV7mKglTG3rn66tbi0HAlljPE_w7Aog&oe=6A178590",
     caption: "DFCAMCLP Students",
   },
   {
-    url: "https://studentcouncildfcamclp.wordpress.com/wp-content/uploads/2021/08/232100591_358971129068351_4516869228152581473_n.png",
+    url: "https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/542705434_1378950140904647_5656420931852481680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHZSKpHj0nDJJr7-g2s5hbeCYrq3li-9AsJiureWL70C28gg5PspCjWaCVdrD5pv0Da71rmdt8DGy3ykJns98X-&_nc_ohc=eBGn1SmxphgQ7kNvwEVGycn&_nc_oc=Adoj8XIXseGQwqXUp2i41OX_C9LNcuEGNsmDPfCRmepcQbiB7gEusHGuLM9o6By2_q0&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=FgKRTYpz2fTWAYQnA1REmQ&_nc_ss=7b2a8&oh=00_Af4c4lDPMLIG-Ezont1myPl17A486n53WfwJBGQoK5_0zg&oe=6A17A13B",
     caption: "Student Council — DFCAMCLP",
   },
 ];
