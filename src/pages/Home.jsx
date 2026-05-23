@@ -9,11 +9,11 @@ const HERO_SLIDES = [
     caption: "New DFCAMCLP Building — Inaugurated 2024",
   },
   {
-    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=469Mbh3TQeEQ7kNvwHsv4ds&_nc_oc=AdrCXGdba_2Zh5SjM-_MudIg22LA1W8vUipedfkfLClBE2NEelGhzrZxwELJbZ7Lts8&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=ZmQ1Y22KqKYSdqZ5Qcqx3g&_nc_ss=7b2a8&oh=00_Af77OKltkFd3A9HBV7mKglTG3rn66tbi0HAlljPE_w7Aog&oe=6A178590",
+    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/542227100_1378951367571191_3093714474353907952_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEkTVXCifUUKi9_V2OC9vNInty85NbbPoKe3Lzk1ts-gvNjGDpYC_vg6vnu4OOCHgxz87nC9IpvPBfgPqUhk2Ci&_nc_ohc=ATsaUktin0AQ7kNvwHnWZN9&_nc_oc=Adowtr_-5YYFkjkbm3Q_9i1GznD3hGLafRCewEPPDtQYUkwwYTb-TvySP0G0owCiC_M&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=Yt_0AgJY4GAS4uWVJQfSdA&_nc_ss=7b2a8&oh=00_Af4mjZPrWIqzvjPOtc6h0Hk7fKviEL9DDISfiFGHSsFWOw&oe=6A17CBF9",
     caption: "DFCAMCLP Students",
   },
   {
-    url: "https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/542705434_1378950140904647_5656420931852481680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHZSKpHj0nDJJr7-g2s5hbeCYrq3li-9AsJiureWL70C28gg5PspCjWaCVdrD5pv0Da71rmdt8DGy3ykJns98X-&_nc_ohc=eBGn1SmxphgQ7kNvwEVGycn&_nc_oc=Adoj8XIXseGQwqXUp2i41OX_C9LNcuEGNsmDPfCRmepcQbiB7gEusHGuLM9o6By2_q0&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=FgKRTYpz2fTWAYQnA1REmQ&_nc_ss=7b2a8&oh=00_Af4c4lDPMLIG-Ezont1myPl17A486n53WfwJBGQoK5_0zg&oe=6A17A13B",
+    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=469Mbh3TQeEQ7kNvwHsv4ds&_nc_oc=AdrCXGdba_2Zh5SjM-_MudIg22LA1W8vUipedfkfLClBE2NEelGhzrZxwELJbZ7Lts8&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=ZmQ1Y22KqKYSdqZ5Qcqx3g&_nc_ss=7b2a8&oh=00_Af77OKltkFd3A9HBV7mKglTG3rn66tbi0HAlljPE_w7Aog&oe=6A178590",
     caption: "Student Council — DFCAMCLP",
   },
 ];
