@@ -112,7 +112,7 @@ export default function Home() {
         <div className="container hero-content animate-fade-in-up">
           <span className="badge badge-accent hero-badge">Las Piñas City Government</span>
           <h1>
-            Free. <i>Quality?</i>.<br />
+            Free. <i>Quality?</i><br />
             <span className="hero-accent">Education for All.</span>
           </h1>
           <p>
