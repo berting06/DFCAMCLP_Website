@@ -45,6 +45,7 @@ body {
   color: var(--gray-800);
   background: var(--white);
   line-height: 1.6;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -96,11 +97,11 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 .section {
-  padding: 80px 0;
+  padding: clamp(56px, 6vw, 96px) 0;
 }
 
 @media (max-width: 768px) {
-  .section { padding: 56px 0; }
+  .section { padding: clamp(40px, 6vw, 72px) 0; }
 }
 
 @media (max-width: 480px) {
@@ -242,6 +243,8 @@ button { cursor: pointer; font-family: var(--font-body); }
   box-shadow: var(--shadow-md);
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
+  width: 100%;
+  min-width: 0;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -377,6 +380,7 @@ select.form-control {
 
 /* Table */
 .table-wrapper { 
+  width: 100%;
   overflow-x: auto; 
   border-radius: var(--radius-md); 
   box-shadow: var(--shadow-sm);
