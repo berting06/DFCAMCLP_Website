@@ -16,7 +16,7 @@ const initialForm = {
   // Step 1
   lastName: "", firstName: "", middleName: "", suffix: "",
   birthDate: "", gender: "", civilStatus: "",
-  address: "", barangay: "", city: "Las Piñas",
+  address: "", barangay: "", city: "",
   email: "", mobile: "", emergencyContact: "", emergencyMobile: "",
   // Step 2
   lastSchool: "", schoolType: "", schoolAddress: "",
@@ -49,6 +49,8 @@ export default function Enrollment() {
       if (!form.address.trim())   e.address   = "Address is required";
       if (!form.email.trim())     e.email     = "Email is required";
       if (!form.mobile.trim())    e.mobile    = "Mobile number is required";
+      if (!form.emergencyContact.trim()) e.emergencyContact = "Emergency contact person is required";
+      if (!form.emergencyMobile.trim())  e.emergencyMobile  = "Emergency contact number is required"; 
     }
     if (step === 1) {
       if (!form.lastSchool.trim())  e.lastSchool  = "Last school attended is required";
@@ -240,6 +242,26 @@ export default function Enrollment() {
                         <label className="form-label">Mobile Number *</label>
                         <input className={`form-control ${errors.mobile ? "is-invalid" : ""}`} value={form.mobile} onChange={e => set("mobile", e.target.value)} placeholder="09XXXXXXXXX" />
                         {errors.mobile && <div className="form-error">{errors.mobile}</div>}
+                      </div>
+                      <div className="form-row">
+                        <div className="form-group">
+                          <label className="form-label">Emergency Contact Person</label>
+                          <input
+                            className="form-control"
+                            value={form.emergencyContact}
+                            onChange={e => set("emergencyContact", e.target.value)}
+                            placeholder="Full Name"
+                          />
+                        </div>
+                        <div className="form-group">
+                          <label className="form-label">Emergency Contact Number</label>
+                          <input
+                            className="form-control"
+                            value={form.emergencyMobile}
+                            onChange={e => set("emergencyMobile", e.target.value)}
+                            placeholder="09XXXXXXXXX"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
