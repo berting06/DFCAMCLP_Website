@@ -13,7 +13,7 @@ const HERO_SLIDES = [
     caption: "DFCAMCLP Students",
   },
   {
-    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/541428768_1378950234237971_1021762653052368538_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGH32sHbo5wnP-AurL60jNGQH8WfiWqAjVAfxZ-JaoCNcc-v74fdiHhHAuZ7b9SluzsrHO-T1xQlBvh1GgHD8ff&_nc_ohc=DQo1uDPjJ04Q7kNvwFarGDc&_nc_oc=Adqy6dvGWbMtkNb6V7JIsLB3-LMIadnttibZ1r9dGS8u5lLjNtJu3KOBDYm55t7Kfjc&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=LP_jMo1W3kNOXzQMNfYDTA&_nc_ss=7b2a8&oh=00_Af7EybVQa2WP_1JuF0cw9-kecXBB6Vxvu1LN3RADrXOMrQ&oe=6A1BC3F9",
+    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=M7QhjEZ4qCQQ7kNvwFKFM3E&_nc_oc=AdrLYLVk0BfwdR2eai4VwFqkptTKaT_oJzcjVGhvRrSZyrynijYxBKqCTwxK4Dn2p6M&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=y8CohPUWhc0VstHLP-WYHQ&_nc_ss=7b2a8&oh=00_Af7XF3GhhUCAWIzbSV_frh1w-3K5XVYU6t5MYohRWunH3A&oe=6A1BB250",
     caption: "Student Council — DFCAMCLP",
   },
 ];
