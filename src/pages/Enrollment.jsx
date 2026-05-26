@@ -69,7 +69,7 @@ export default function Enrollment() {
   const submit = () => {
     if (validateStep()) {
       // Send form data via EmailJS
-      emailjs.send("service_yourserviceid", "template_yourtemplateid", {
+      emailjs.send("service_j988e1h", "template_d4ehbpd", {
         from_name: `${form.firstName} ${form.lastName}`,
         from_email: form.email,
         mobile: form.mobile,
@@ -101,7 +101,7 @@ export default function Enrollment() {
 
           Submitted at: ${new Date().toLocaleString()}
         `
-      }, "YOUR_PUBLIC_KEY") // You'll need to get this from EmailJS
+      }, "Kcvbm1kb4VB62Ay_dEewg") // You'll need to get this from EmailJS
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setSubmitted(true);
