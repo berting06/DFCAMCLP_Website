@@ -5,7 +5,8 @@
   justify-content: center;
   position: relative;
   padding: 40px 16px;
-  background: var(--off-white);
+  background: var(--bg-secondary);
+  transition: background-color var(--transition);
 }
 
 .login-bg {
@@ -17,7 +18,7 @@
 }
 
 .login-card {
-  background: var(--white);
+  background: var(--bg-secondary);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-xl);
   width: 100%;
@@ -49,8 +50,8 @@
 /* Roles */
 .role-tabs {
   display: flex;
-  border-bottom: 1px solid var(--gray-100);
-  background: var(--gray-50);
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-tertiary);
 }
 .role-tab {
   flex: 1;
@@ -60,7 +61,7 @@
   border-bottom: 3px solid transparent;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--gray-400);
+  color: var(--text-tertiary);
   transition: all var(--transition);
   cursor: pointer;
   min-height: 44px;
@@ -72,11 +73,11 @@
 }
 .role-tab:active, .role-tab:hover { 
   color: var(--primary); 
-  background: var(--white); 
+  background: var(--bg-secondary); 
 }
 .role-tab.active { 
   color: var(--primary); 
-  background: var(--white); 
+  background: var(--bg-secondary); 
   border-bottom-color: var(--primary); 
 }
 
@@ -138,14 +139,18 @@
 .login-footer {
   padding: 20px 32px 28px;
   text-align: center;
-  border-top: 1px solid var(--gray-100);
+  border-top: 1px solid var(--border-light);
 }
-.login-footer p { font-size: 0.875rem; color: var(--gray-600); margin-bottom: 12px; }
+.login-footer p { 
+  font-size: 0.875rem; 
+  color: var(--text-secondary); 
+  margin-bottom: 12px; 
+}
 .login-footer a { color: var(--primary); font-weight: 600; }
 .login-dpa {
   font-size: 0.75rem;
-  color: var(--gray-400);
-  background: var(--gray-50);
+  color: var(--text-tertiary);
+  background: var(--bg-tertiary);
   border-radius: var(--radius-sm);
   padding: 8px 12px;
   display: inline-block;

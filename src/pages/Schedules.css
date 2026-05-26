@@ -1,8 +1,14 @@
-.schedules-section { background: var(--off-white); }
+.schedules-section { 
+  background: var(--bg-secondary);
+  transition: background-color var(--transition);
+}
 
 .schedules-filters {
   padding: 24px;
   margin-bottom: 20px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
 }
 .filter-row {
   display: flex;
@@ -23,7 +29,7 @@
   align-items: center;
   margin-bottom: 16px;
   font-size: 0.875rem;
-  color: var(--gray-600);
+  color: var(--text-secondary);
   flex-wrap: wrap;
   gap: 8px;
 }

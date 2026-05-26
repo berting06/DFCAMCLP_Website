@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
 :root {
-  --primary:       #003087;   /* deep Las Piñas blue */
+  /* Light Mode Colors */
+  --primary:       #003087;
   --primary-dark:  #001f5c;
   --primary-light: #1a4db3;
-  --accent:        #c8a84b;   /* gold — civic pride */
+  --accent:        #c8a84b;
   --accent-light:  #e8c96a;
   --accent-dark:   #a07a20;
+  
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f5f7fb;
+  --bg-tertiary:   #f9fafb;
+  
+  --text-primary:  #1a202c;
+  --text-secondary:#4a5568;
+  --text-tertiary: #9ba8be;
+  
+  --border-color:  #e2e6ef;
+  --border-light:  #f0f2f7;
+  
   --white:         #ffffff;
   --off-white:     #f5f7fb;
   --gray-50:       #f9fafb;
@@ -35,6 +48,63 @@
   --transition: 0.25s ease;
 }
 
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary:    #0f0f14;
+    --bg-secondary:  #1a1a23;
+    --bg-tertiary:   #25252f;
+    
+    --text-primary:  #e8eaed;
+    --text-secondary:#b0b3b8;
+    --text-tertiary: #7e8186;
+    
+    --border-color:  #2d2d36;
+    --border-light:  #1f1f28;
+    
+    --shadow-sm:  0 1px 3px rgba(0,0,0,.3);
+    --shadow-md:  0 4px 16px rgba(0,0,0,.4);
+    --shadow-lg:  0 8px 32px rgba(0,0,0,.5);
+    --shadow-xl:  0 16px 48px rgba(0,0,0,.6);
+  }
+}
+
+html[data-theme="dark"] {
+  --bg-primary:    #0f0f14;
+  --bg-secondary:  #1a1a23;
+  --bg-tertiary:   #25252f;
+  
+  --text-primary:  #e8eaed;
+  --text-secondary:#b0b3b8;
+  --text-tertiary: #7e8186;
+  
+  --border-color:  #2d2d36;
+  --border-light:  #1f1f28;
+  
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.3);
+  --shadow-md:  0 4px 16px rgba(0,0,0,.4);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,.5);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,.6);
+}
+
+html[data-theme="light"] {
+  --bg-primary:    #ffffff;
+  --bg-secondary:  #f5f7fb;
+  --bg-tertiary:   #f9fafb;
+  
+  --text-primary:  #1a202c;
+  --text-secondary:#4a5568;
+  --text-tertiary: #9ba8be;
+  
+  --border-color:  #e2e6ef;
+  --border-light:  #f0f2f7;
+  
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,.10);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,.14);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,.18);
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -42,11 +112,12 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   font-size: 16px;
-  color: var(--gray-800);
-  background: var(--white);
+  color: var(--text-primary);
+  background: var(--bg-primary);
   line-height: 1.6;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  transition: background-color var(--transition), color var(--transition);
 }
 
 .app-wrapper {
@@ -118,7 +189,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .section-subtitle {
   font-size: 1.05rem;
-  color: var(--gray-600);
+  color: var(--text-secondary);
   max-width: 560px;
   line-height: 1.7;
 }
@@ -238,11 +309,11 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 /* Cards */
 .card {
-  background: var(--white);
+  background: var(--bg-secondary);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   overflow: hidden;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), background-color var(--transition);
   width: 100%;
   min-width: 0;
 }
@@ -262,7 +333,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   display: block;
   font-weight: 600;
   font-size: 0.875rem;
-  color: var(--gray-600);
+  color: var(--text-secondary);
   margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -270,13 +341,13 @@ button { cursor: pointer; font-family: var(--font-body); }
 .form-control {
   width: 100%;
   padding: 11px 15px;
-  border: 1.5px solid var(--gray-200);
+  border: 1.5px solid var(--border-color);
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: var(--gray-800);
-  background: var(--white);
-  transition: border-color var(--transition), box-shadow var(--transition);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  transition: border-color var(--transition), box-shadow var(--transition), background-color var(--transition), color var(--transition);
   outline: none;
   min-height: 44px;
   -webkit-appearance: none;
@@ -290,7 +361,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   border-color: var(--primary);
 }
 .form-control::placeholder { 
-  color: var(--gray-400); 
+  color: var(--text-tertiary); 
   font-size: 0.9rem;
 }
 
@@ -389,7 +460,7 @@ select.form-control {
 table { 
   width: 100%; 
   border-collapse: collapse; 
-  background: var(--white); 
+  background: var(--bg-secondary); 
 }
 thead { 
   background: var(--primary); 
@@ -409,14 +480,14 @@ th {
 td { 
   padding: 13px 16px; 
   font-size: 0.9rem; 
-  border-bottom: 1px solid var(--gray-100); 
-  color: var(--gray-600); 
+  border-bottom: 1px solid var(--border-light); 
+  color: var(--text-secondary); 
 }
 tbody tr { 
   transition: background var(--transition);
 }
 tbody tr:hover { 
-  background: var(--gray-50); 
+  background: var(--bg-tertiary); 
 }
 tbody tr:focus-within {
   background: rgba(0,48,135,.02);

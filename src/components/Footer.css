@@ -1,6 +1,7 @@
 .footer {
-  background: var(--white);
+  background: var(--bg-primary);
   margin-top: auto;
+  transition: background-color var(--transition);
 }
 
 .footer-wave {

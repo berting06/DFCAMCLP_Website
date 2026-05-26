@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "./ThemeContext";
 import "./Navbar.css";
 
 const LOGO = "https://studentcouncildfcamclp.wordpress.com/wp-content/uploads/2021/08/cropped-sc_logo-e1629982984381.png";
@@ -14,6 +15,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
   useEffect(() => {
@@ -63,6 +65,14 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="navbar-cta">
+            <button
+              className="navbar-theme-toggle"
+              onClick={toggleTheme}
+              aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+              title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+            >
+              {theme === "light" ? "🌙" : "☀️"}
+            </button>
             <Link to="/login" className="btn btn-outline navbar-btn-login">Log In</Link>
             <Link to="/enrollment" className="btn btn-accent navbar-btn-apply">Apply Now</Link>
           </div>
@@ -90,6 +100,13 @@ export default function Navbar() {
           </Link>
         ))}
         <div className="navbar-mobile-cta">
+          <button
+            className="navbar-theme-toggle-mobile"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+          >
+            {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+          </button>
           <Link to="/login" className="btn btn-outline" style={{width:"100%",justifyContent:"center"}}>Log In</Link>
           <Link to="/enrollment" className="btn btn-accent" style={{width:"100%",justifyContent:"center"}}>Apply Now</Link>
         </div>

@@ -1,4 +1,7 @@
-.enrollment-section { background: var(--gray-50); }
+.enrollment-section { 
+  background: var(--bg-secondary);
+  transition: background-color var(--transition);
+}
 
 .enrollment-container {
   display: grid;
@@ -11,7 +14,7 @@
 .enrollment-sidebar { position: sticky; top: 120px; }
 
 .enrollment-steps {
-  background: var(--white);
+  background: var(--bg-secondary);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
@@ -22,10 +25,10 @@
   align-items: center;
   gap: 12px;
   padding: 16px 20px;
-  border-bottom: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--border-light);
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--gray-400);
+  color: var(--text-tertiary);
   transition: all var(--transition);
   min-height: 44px;
   touch-action: manipulation;
@@ -50,8 +53,8 @@
   font-size: 0.78rem;
   font-weight: 700;
   flex-shrink: 0;
-  background: var(--gray-100);
-  color: var(--gray-400);
+  background: var(--bg-tertiary);
+  color: var(--text-tertiary);
   transition: all var(--transition);
 }
 .enroll-step.active .enroll-step-num { background: var(--primary); color: var(--white); }
@@ -63,7 +66,7 @@
   border-radius: var(--radius-md);
   padding: 16px;
   font-size: 0.82rem;
-  color: var(--gray-600);
+  color: var(--text-secondary);
   line-height: 1.55;
 }
 .sidebar-notice strong { display: block; margin-bottom: 8px; color: var(--primary-dark); }
@@ -75,7 +78,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 28px;
-  border-bottom: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--border-light);
 }
 .enrollment-card-header h2 {
   font-family: var(--font-display);
@@ -84,8 +87,8 @@
 }
 .step-indicator {
   font-size: 0.8rem;
-  color: var(--gray-400);
-  background: var(--gray-100);
+  color: var(--text-tertiary);
+  background: var(--bg-tertiary);
   padding: 4px 12px;
   border-radius: 99px;
 }
@@ -107,8 +110,8 @@
   align-items: center;
   gap: 12px;
   padding: 20px 28px;
-  border-top: 1px solid var(--gray-100);
-  background: var(--gray-50);
+  border-top: 1px solid var(--border-light);
+  background: var(--bg-tertiary);
 }
 
 .enrollment-actions .btn {
@@ -119,7 +122,7 @@
 
 /* Privacy agreements */
 .privacy-agreements {
-  background: var(--gray-50);
+  background: var(--bg-tertiary);
   border-radius: var(--radius-md);
   padding: 20px;
   margin-top: 8px;
@@ -152,14 +155,18 @@
 }
 .checkbox-label span { 
   font-size: 0.875rem; 
-  color: var(--gray-600); 
+  color: var(--text-secondary); 
   line-height: 1.6;
   flex: 1;
 }
 
 /* Review */
 .review-section { display: flex; flex-direction: column; gap: 24px; }
-.review-group { background: var(--gray-50); border-radius: var(--radius-md); padding: 20px; }
+.review-group { 
+  background: var(--bg-tertiary); 
+  border-radius: var(--radius-md); 
+  padding: 20px; 
+}
 .review-group h4 {
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -173,16 +180,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--border-light);
   font-size: 0.875rem;
 }
 .review-row:last-child { border-bottom: none; }
-.review-row span { color: var(--gray-400); }
-.review-row strong { color: var(--gray-800); }
+.review-row span { color: var(--text-tertiary); }
+.review-row strong { color: var(--text-primary); }
 
 /* Success */
 .enrollment-success {
-  background: var(--white);
+  background: var(--bg-secondary);
   border-radius: var(--radius-lg);
   padding: 48px;
   max-width: 560px;
