@@ -101,7 +101,7 @@ export default function Enrollment() {
 
           Submitted at: ${new Date().toLocaleString()}
         `
-      }, "Kcvbm1kb4VB62Ay_dEewg") // You'll need to get this from EmailJS
+      }, "JOMcIxXoGWmzqluAe") // You'll need to get this from EmailJS
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setSubmitted(true);
