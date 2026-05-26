@@ -1,6 +1,9 @@
-.enrollment-section { 
+.enrollment-section {
   background: var(--bg-secondary);
   transition: background-color var(--transition);
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: stretch;
 }
 
 .enrollment-container {
@@ -195,31 +198,32 @@
   max-width: 560px;
   text-align: center;
   box-shadow: var(--shadow-xl);
-  color: black;
+  color: var(--text-primary);
 }
-.success-icon { font-size: 3rem; margin-bottom: 16px; color:black;}
+.success-icon { font-size: 3rem; margin-bottom: 16px; color: var(--success);}
 .enrollment-success h2 {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  color: black;
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
-.enrollment-success p { color: black; margin-bottom: 12px; font-size: 0.95rem; }
+.enrollment-success p { color: var(--text-primary); margin-bottom: 12px; font-size: 0.95rem; }
 .success-ref {
   font-family: monospace;
-  background: rgba(255,255,255,.15);
+  background: rgba(var(--gray-200), .15);
   padding: 8px 16px;
   border-radius: var(--radius-sm);
   font-size: 1.05rem;
   letter-spacing: 0.05em;
   margin-bottom: 16px !important;
   display: inline-block;
-  color: black;
+  color: var(--text-primary);
 }
 .success-note {
   font-size: 0.85rem !important;
-  opacity: 0.75;
+  opacity: 0.85;
   margin-bottom: 28px !important;
+  color: var(--text-secondary);
 }
 
 @media (max-width: 1024px) {

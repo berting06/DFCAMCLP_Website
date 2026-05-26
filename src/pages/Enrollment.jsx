@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 import "./Enrollment.css";
 
 const PROGRAMS = [
@@ -65,7 +66,51 @@ export default function Enrollment() {
 
   const next = () => { if (validateStep()) setStep(s => s + 1); };
   const back = () => setStep(s => s - 1);
-  const submit = () => { if (validateStep()) setSubmitted(true); };
+  const submit = () => {
+    if (validateStep()) {
+      // Send form data via EmailJS
+      emailjs.send("service_yourserviceid", "template_yourtemplateid", {
+        from_name: `${form.firstName} ${form.lastName}`,
+        from_email: form.email,
+        mobile: form.mobile,
+        message: `
+          New Enrollment Submission:
+
+          Personal Information:
+          - Name: ${form.firstName} ${form.middleName} ${form.lastName} ${form.suffix}
+          - Birth Date: ${form.birthDate}
+          - Gender: ${form.gender}
+          - Civil Status: ${form.civilStatus}
+          - Address: ${form.address}, ${form.barangay}, ${form.city}
+          - Email: ${form.email}
+          - Mobile: ${form.mobile}
+          - Emergency Contact: ${form.emergencyContact} (${form.emergencyMobile})
+
+          Academic Background:
+          - Last School: ${form.lastSchool}
+          - School Type: ${form.schoolType}
+          - Year Graduated: ${form.yearGraduated}
+          - GPA: ${form.gpa}
+          - LRN: ${form.lrnNumber}
+
+          Enrollment Details:
+          - Program: ${form.program}
+          - Enrollment Type: ${form.enrollmentType}
+          - Year Level: ${form.yearLevel}
+          - Semester: ${form.semester}
+
+          Submitted at: ${new Date().toLocaleString()}
+        `
+      }, "YOUR_PUBLIC_KEY") // You'll need to get this from EmailJS
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setSubmitted(true);
+      }, (error) => {
+        console.log('FAILED...', error);
+        alert('Failed to send email. Please try again later.');
+      });
+    }
+  };
 
   if (submitted) {
     return (
@@ -73,17 +118,17 @@ export default function Enrollment() {
         <div className="container">
           <div className="enrollment-success animate-fade-in-up">
             <div className="success-icon">✅</div>
-            <h2 style="color: black;">Application Submitted!</h2>
-            <p style="color: black;">
+            <h2>Application Submitted!</h2>
+            <p>
               Thank you, <strong>{form.firstName} {form.lastName}</strong>!<br />
               Your enrollment application has been received. A confirmation will be sent to <strong>{form.email}</strong>.
             </p>
-            <p className="success-ref" style="color: black;">Reference #: DFCAM-{Date.now().toString().slice(-8)}</p>
-            <p className="success-note" style="color: black;">
+            <p className="success-ref">Reference #: DFCAM-{Date.now().toString().slice(-8)}</p>
+            <p className="success-note">
               📌 Please wait for further instructions from the Registrar's Office.
               Keep your reference number for follow-up.
             </p>
-            <button style="color: black;" className="btn btn-accent" onClick={() => { setSubmitted(false); setStep(0); setForm(initialForm); }}>
+            <button className="btn btn-accent" onClick={() => { setSubmitted(false); setStep(0); setForm(initialForm); }}>
               Submit Another Application
             </button>
           </div>
