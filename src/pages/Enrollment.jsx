@@ -229,7 +229,7 @@ export default function Enrollment() {
                       </div>
                       <div className="form-group">
                         <label className="form-label">City</label>
-                        <input className="form-control" value={form.city} readOnly style={{background:"var(--gray-100)"}} />
+                        <input className="form-control" value={form.city} onChange={e => set("city", e.target.value)} placeholder="Enter your city" style={{background:"var(--gray-100)"}} />
                       </div>
                     </div>
                     <div className="form-row">
