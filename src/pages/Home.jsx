@@ -13,16 +13,16 @@ const HERO_SLIDES = [
     caption: "DFCAMCLP Students",
   },
   {
-    url: "https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/541428768_1378950234237971_1021762653052368538_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGH32sHbo5wnP-AurL60jNGQH8WfiWqAjVAfxZ-JaoCNcc-v74fdiHhHAuZ7b9SluzsrHO-T1xQlBvh1GgHD8ff&_nc_ohc=DQo1uDPjJ04Q7kNvwFarGDc&_nc_oc=Adqy6dvGWbMtkNb6V7JIsLB3-LMIadnttibZ1r9dGS8u5lLjNtJu3KOBDYm55t7Kfjc&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=LP_jMo1W3kNOXzQMNfYDTA&_nc_ss=7b2a8&oh=00_Af7EybVQa2WP_1JuF0cw9-kecXBB6Vxvu1LN3RADrXOMrQ&oe=6A1BC3F9",
+    url: "https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/542183306_1378949644238030_3211382995750395151_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeH6a6FwbkKAAnKurHuzhtz7_Yu4jEnvzlT9i7iMSe_OVDQ08BF_UoKNi9XzVPFSIwitNxzU3dhzkYrGGA1xEBoa&_nc_ohc=M7QhjEZ4qCQQ7kNvwFKFM3E&_nc_oc=AdrLYLVk0BfwdR2eai4VwFqkptTKaT_oJzcjVGhvRrSZyrynijYxBKqCTwxK4Dn2p6M&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=y8CohPUWhc0VstHLP-WYHQ&_nc_ss=7b2a8&oh=00_Af7XF3GhhUCAWIzbSV_frh1w-3K5XVYU6t5MYohRWunH3A&oe=6A1BB250",
     caption: "Student Council — DFCAMCLP",
   },
 ];
 
 const stats = [
-  { value: "1998",  label: "Year Established"  },
-  { value: "100%",  label: "Free Education"    },
-  { value: "500+",  label: "Scholars per Year" },
-  { value: "LGU",   label: "Managed"           },
+  { value: "1998", label: "Year Established" },
+  { value: "100%", label: "Free Education" },
+  { value: "500+", label: "Scholars per Year" },
+  { value: "LGU", label: "Managed" },
 ];
 
 const features = [
@@ -57,11 +57,11 @@ const features = [
 ];
 
 const programs = [
-  { code: "BSBA", name: "Business Administration", dept: "Business"   },
-  { code: "BSA",  name: "Accountancy",             dept: "Business"   },
-  { code: "BSIS", name: "Information Systems",     dept: "Technology" },
-  { code: "BSIT", name: "Information Technology",  dept: "Technology" },
-  { code: "BSHM", name: "Hospitality Management",  dept: "Tourism"    },
+  { code: "BSBA", name: "Business Administration", dept: "Business" },
+  { code: "BSA", name: "Accountancy", dept: "Business" },
+  { code: "BSIS", name: "Information Systems", dept: "Technology" },
+  { code: "BSIT", name: "Information Technology", dept: "Technology" },
+  { code: "BSHM", name: "Hospitality Management", dept: "Tourism" },
 ];
 
 const announcements = [
@@ -87,11 +87,14 @@ const announcements = [
 
 export default function Home() {
   const [slide, setSlide] = useState(0);
+  const [hoveredFeature, setHoveredFeature] = useState(null);
+  const [hoveredProgram, setHoveredProgram] = useState(null);
+  const [hoveredAnnouncement, setHoveredAnnouncement] = useState(null);
 
   // Auto-advance every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
-      setSlide(s => (s + 1) % HERO_SLIDES.length);
+      setSlide((s) => (s + 1) % HERO_SLIDES.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -110,7 +113,9 @@ export default function Home() {
         <div className="hero-overlay" />
 
         <div className="container hero-content animate-fade-in-up">
-          <span className="badge badge-accent hero-badge">Las Piñas City Government</span>
+          <span className="badge badge-accent hero-badge">
+            Las Piñas City Government
+          </span>
           <h1>
             Free. <i>Quality</i><br />
             <span className="hero-accent">Education for All.</span>
@@ -120,8 +125,12 @@ export default function Home() {
             Las Piñeros with accessible, world-class higher education since 1998.
           </p>
           <div className="hero-cta">
-            <Link to="/enrollment" className="btn btn-accent">Apply for Enrollment</Link>
-            <Link to="/schedules" className="btn btn-outline-white">View Schedules</Link>
+            <Link to="/enrollment" className="btn btn-accent">
+              Apply for Enrollment
+            </Link>
+            <Link to="/schedules" className="btn btn-outline-white">
+              View Schedules
+            </Link>
           </div>
         </div>
 
@@ -144,8 +153,8 @@ export default function Home() {
       {/* STATS */}
       <section className="stats-bar">
         <div className="container stats-grid">
-          {stats.map(s => (
-            <div key={s.label} className="stat-item">
+          {stats.map((s) => (
+            <div key={s.label} className="stat-item animate-fade-in-up">
               <span className="stat-value">{s.value}</span>
               <span className="stat-label">{s.label}</span>
             </div>
@@ -157,7 +166,9 @@ export default function Home() {
       <section className="section features-section">
         <div className="container">
           <div className="section-header">
-            <p className="badge badge-primary" style={{marginBottom: 8}}>Student Services</p>
+            <p className="badge badge-primary" style={{ marginBottom: 8 }}>
+              Student Services
+            </p>
             <h2 className="section-title">Everything You Need,<br />In One Place</h2>
             <div className="divider-accent" />
             <p className="section-subtitle">
@@ -165,8 +176,15 @@ export default function Home() {
             </p>
           </div>
           <div className="features-grid">
-            {features.map(f => (
-              <div key={f.title} className="card feature-card">
+            {features.map((f, index) => (
+              <div
+                key={f.title}
+                className={`card feature-card ${
+                  hoveredFeature === index ? "hovered" : ""
+                }`}
+                onMouseEnter={() => setHoveredFeature(index)}
+                onMouseLeave={() => setHoveredFeature(null)}
+              >
                 <div className="feature-icon">{f.icon}</div>
                 <h3>{f.title}</h3>
                 <p>{f.desc}</p>
@@ -183,19 +201,28 @@ export default function Home() {
       <section className="section programs-section">
         <div className="container programs-inner">
           <div className="programs-text">
-            <p className="badge badge-accent" style={{marginBottom: 8}}>Academic Programs</p>
+            <p className="badge badge-accent" style={{ marginBottom: 8 }}>
+              Academic Programs
+            </p>
             <h2 className="section-title">Programs Offered</h2>
             <div className="divider-accent" />
             <p className="section-subtitle">
               CHED-authorized degree programs delivered free of charge to all qualified residents of Las Piñas City.
             </p>
-            <Link to="/enrollment" className="btn btn-primary" style={{marginTop: 28}}>
+            <Link to="/enrollment" className="btn btn-primary" style={{ marginTop: 28 }}>
               Apply Now
             </Link>
           </div>
           <div className="programs-list">
-            {programs.map(p => (
-              <div key={p.code} className="program-item">
+            {programs.map((p, index) => (
+              <div
+                key={p.code}
+                className={`program-item ${
+                  hoveredProgram === index ? "hovered" : ""
+                }`}
+                onMouseEnter={() => setHoveredProgram(index)}
+                onMouseLeave={() => setHoveredProgram(null)}
+              >
                 <div className="program-code">{p.code}</div>
                 <div>
                   <div className="program-name">{p.name}</div>
@@ -211,20 +238,31 @@ export default function Home() {
       <section className="section announcements-section">
         <div className="container">
           <div className="section-header">
-            <p className="badge badge-primary" style={{marginBottom: 8}}>Latest Updates</p>
+            <p className="badge badge-primary" style={{ marginBottom: 8 }}>
+              Latest Updates
+            </p>
             <h2 className="section-title">Announcements</h2>
             <div className="divider-accent" />
           </div>
           <div className="announcements-grid">
-            {announcements.map(a => (
-              <div key={a.title} className="card announcement-card">
+            {announcements.map((a, index) => (
+              <div
+                key={a.title}
+                className={`card announcement-card ${
+                  hoveredAnnouncement === index ? "hovered" : ""
+                }`}
+                onMouseEnter={() => setHoveredAnnouncement(index)}
+                onMouseLeave={() => setHoveredAnnouncement(null)}
+              >
                 <div className="announcement-meta">
                   <span className="badge badge-accent">{a.tag}</span>
                   <span className="announcement-date">{a.date}</span>
                 </div>
                 <h3>{a.title}</h3>
                 <p>{a.desc}</p>
-                <a href="#" className="feature-link">Read more <span>→</span></a>
+                <a href="#" className="feature-link">
+                  Read more <span>→</span>
+                </a>
               </div>
             ))}
           </div>
@@ -236,9 +274,11 @@ export default function Home() {
         <div className="container cta-banner-inner">
           <div>
             <h2>Ready to Begin Your Journey?</h2>
-            <p>Enrollment for S.Y. 2025–2026 is now open. Apply today — it's 100% free.</p>
+            <p>
+              Enrollment for S.Y. 2025–2026 is now open. Apply today — it's 100% free.
+            </p>
           </div>
-          <Link to="/enrollment" className="btn btn-accent" style={{flexShrink:0}}>
+          <Link to="/enrollment" className="btn btn-accent" style={{ flexShrink: 0 }}>
             Start Your Application
           </Link>
         </div>
