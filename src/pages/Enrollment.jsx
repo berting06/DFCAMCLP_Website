@@ -73,17 +73,17 @@ export default function Enrollment() {
         <div className="container">
           <div className="enrollment-success animate-fade-in-up">
             <div className="success-icon">✅</div>
-            <h2>Application Submitted!</h2>
-            <p>
+            <h2 style="color: black;">Application Submitted!</h2>
+            <p style="color: black;">
               Thank you, <strong>{form.firstName} {form.lastName}</strong>!<br />
               Your enrollment application has been received. A confirmation will be sent to <strong>{form.email}</strong>.
             </p>
-            <p className="success-ref">Reference #: DFCAM-{Date.now().toString().slice(-8)}</p>
-            <p className="success-note">
+            <p className="success-ref" style="color: black;">Reference #: DFCAM-{Date.now().toString().slice(-8)}</p>
+            <p className="success-note" style="color: black;">
               📌 Please wait for further instructions from the Registrar's Office.
               Keep your reference number for follow-up.
             </p>
-            <button className="btn btn-accent" onClick={() => { setSubmitted(false); setStep(0); setForm(initialForm); }}>
+            <button style="color: black;" className="btn btn-accent" onClick={() => { setSubmitted(false); setStep(0); setForm(initialForm); }}>
               Submit Another Application
             </button>
           </div>
