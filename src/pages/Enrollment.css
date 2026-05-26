@@ -200,7 +200,7 @@
 .enrollment-success h2 {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 12px;
 }
 .enrollment-success p { color: rgba(255,255,255,.85); margin-bottom: 12px; font-size: 0.95rem; }

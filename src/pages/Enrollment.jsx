@@ -158,7 +158,7 @@ export default function Enrollment() {
                         <label className="form-label">Gender *</label>
                         <select className={`form-control ${errors.gender ? "is-invalid" : ""}`} value={form.gender} onChange={e => set("gender", e.target.value)}>
                           <option value="">Select</option>
-                          <option>Male</option><option>Female</option><option>Prefer not to say</option>
+                          <option>Male</option><option>Female</option>
                         </select>
                         {errors.gender && <div className="form-error">{errors.gender}</div>}
                       </div>
@@ -258,6 +258,7 @@ export default function Enrollment() {
                         <label className="form-label">Enrollment Type</label>
                         <select className="form-control" value={form.enrollmentType} onChange={e => set("enrollmentType", e.target.value)}>
                           <option>New Student</option>
+                          <option>Existing Student</option>
                           <option>Transferee</option>
                           <option>Returnee</option>
                         </select>
