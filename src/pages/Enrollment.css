@@ -195,16 +195,16 @@
   max-width: 560px;
   text-align: center;
   box-shadow: var(--shadow-xl);
-  color: var(--black);
+  color: black;
 }
-.success-icon { font-size: 3rem; margin-bottom: 16px; }
+.success-icon { font-size: 3rem; margin-bottom: 16px; color:black;}
 .enrollment-success h2 {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  color: var(--black);
+  color: black;
   margin-bottom: 12px;
 }
-.enrollment-success p { color: rgba(255,255,255,.85); margin-bottom: 12px; font-size: 0.95rem; }
+.enrollment-success p { color: black; margin-bottom: 12px; font-size: 0.95rem; }
 .success-ref {
   font-family: monospace;
   background: rgba(255,255,255,.15);
@@ -214,6 +214,7 @@
   letter-spacing: 0.05em;
   margin-bottom: 16px !important;
   display: inline-block;
+  color: black;
 }
 .success-note {
   font-size: 0.85rem !important;
